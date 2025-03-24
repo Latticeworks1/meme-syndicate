@@ -5,88 +5,45 @@
 The **Meme Syndicate Protocol** is an advanced intelligence and deployment system for identifying, analyzing, and monetizing high-potential memes through cryptocurrency creation. By integrating narrative intelligence, community analysis, and temporal pattern recognition, the system identifies memetic potential **before conventional metrics detect it**.
 
 ```mermaid
-graph TB
-    %% STYLING (bold, muted contrast, serious tone)
-    classDef executive fill:#1e1e1e,stroke:#f96,stroke-width:3px,color:#f96,font-weight:bold
-    classDef intelligence fill:#102840,stroke:#5bc0de,stroke-width:2px,color:#cceeff
-    classDef operations fill:#143014,stroke:#6fdc6f,stroke-width:2px,color:#caffca
-    classDef tech fill:#2a1030,stroke:#c678dd,stroke-width:2px,color:#f0d8ff
-    classDef finance fill:#332800,stroke:#ffcc00,stroke-width:2px,color:#fff2b3
-    classDef special fill:#222,stroke:#888,stroke-width:2px,color:#ccc,stroke-dasharray: 5 5
+### 🗺️ Meme Syndicate Org Structure
 
-    %% EXEC
-    CEO[👑 Chief Executive Officer]:::executive
-    CIO[🧠 Chief Intelligence Officer]:::executive
-    COO[🎯 Chief Operations Officer]:::executive
-    CTO[💻 Chief Technology Officer]:::executive
-    CFO[💰 Chief Financial Officer]:::executive
+```mermaid
+graph TD
+    CEO[👑 CEO]
+    CIO[🧠 CIO]
+    COO[🎯 COO]
+    CTO[💻 CTO]
+    CFO[💰 CFO]
+    SU[🕶️ Special Ops]
 
-    %% Intelligence Department
-    ID[📡 Intelligence Division]:::intelligence
-    ID_1[🧠 Meme Detection Unit]:::intelligence
-    ID_2[📖 Narrative Analysis Unit]:::intelligence
-    ID_3[🌐 Cultural Context Unit]:::intelligence
-    ID_4[⏳ Temporal Patterns Unit]:::intelligence
-    ID_5[📊 CI Score Modeling Unit]:::intelligence
-
-    %% Operations Department
-    OD[🚀 Operations Division]:::operations
-    OD_1[📣 PR Ops Unit]:::operations
-    OD_2[🤝 Influencer Relations Unit]:::operations
-    OD_3[🎯 Campaign Execution Unit]:::operations
-    OD_4[👥 Community Management Unit]:::operations
-    OD_5[📈 Performance Tracking Unit]:::operations
-
-    %% Technology Department
-    TD[💻 Technology Division]:::tech
-    TD_1[🛠 Platform Engineering Unit]:::tech
-    TD_2[📦 Data Infrastructure Unit]:::tech
-    TD_3[⚙️ Algorithm Development Unit]:::tech
-    TD_4[🔒 Security Unit]:::tech
-    TD_5[🎨 UI/UX Unit]:::tech
-
-    %% Finance Department
-    FD[🏦 Finance Division]:::finance
-    FD_1[🪙 Token Launch Unit]:::finance
-    FD_2[📊 Investment Management Unit]:::finance
-    FD_3[🧮 Risk Assessment Unit]:::finance
-    FD_4[📜 Compliance Unit]:::finance
-    FD_5[📈 Performance Analytics Unit]:::finance
-
-    %% Special Units
-    SU[🕶️ Special Units]:::special
-    SU_1[🚨 Emergency Response Team]:::special
-    SU_2[🌀 Trend Forecasting Lab]:::special
-    SU_3[🧭 Cultural Advisory Board]:::special
-    SU_4[⚖️ Ethical Review Committee]:::special
-
-    %% Exec Connections
+    %% Executive hierarchy
     CEO --> CIO
     CEO --> COO
     CEO --> CTO
     CEO --> CFO
     CEO --> SU
 
-    %% Division Leads
-    CIO --> ID
-    COO --> OD
-    CTO --> TD
-    CFO --> FD
+    %% Divisions
+    CIO --> ID[📡 Intelligence Div]
+    COO --> OD[🚀 Ops Div]
+    CTO --> TD[💻 Tech Div]
+    CFO --> FD[🏦 Finance Div]
 
-    %% Subunit Breakdown
-    ID --> ID_1 & ID_2 & ID_3 & ID_4 & ID_5
-    OD --> OD_1 & OD_2 & OD_3 & OD_4 & OD_5
-    TD --> TD_1 & TD_2 & TD_3 & TD_4 & TD_5
-    FD --> FD_1 & FD_2 & FD_3 & FD_4 & FD_5
-    SU --> SU_1 & SU_2 & SU_3 & SU_4
+    %% Compact Units (1-2 per division)
+    ID --> ID1[Meme Detect]
+    ID --> ID2[Narrative Engine]
 
-    %% Cross-functional Connects
-    ID_5 -.-> OD_1
-    ID_2 -.-> SU_2
-    OD_3 -.-> FD_1
-    TD_3 -.-> ID_5
-    SU_3 -.-> ID_3
-    FD_3 -.-> SU_1
+    OD --> OD1[PR Ops]
+    OD --> OD2[Influencer Relay]
+
+    TD --> TD1[Alg Dev]
+    TD --> TD2[Infra]
+
+    FD --> FD1[Token Launch]
+    FD --> FD2[Risk Engine]
+
+    SU --> SU1[🌀 Trend Lab]
+    SU --> SU2[⚖️ Ethics Council]
 ```
 ---
 
