@@ -1,10 +1,9 @@
 # 🧠 Meme Syndicate Protocol  
 ### A Vector-Based Multi-Agent Framework for Memecoin Analytics and Deployment
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)  
-[![LangChain](https://img.shields.io/badge/LangChain-0.0.267-green)](https://github.com/hwchase17/langchain)  
-[![ChromaDB](https://img.shields.io/badge/ChromaDB-0.4.6-purple)](https://github.com/chroma-core/chroma)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/) [![LangChain](https://img.shields.io/badge/LangChain-0.0.267-green)](https://github.com/hwchase17/langchain) [![ChromaDB](https://img.shields.io/badge/ChromaDB-0.4.6-purple)](https://github.com/chroma-core/chroma)
+
 
 ---
 
