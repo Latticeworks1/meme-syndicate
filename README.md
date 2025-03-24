@@ -48,7 +48,7 @@ flowchart TD
     SU --> FD3
 
     %% Execution End
-    FD3 --> RESULT[🚀 Launch Memecoin + Track Performance]
+    FD3 --> RESULT[Launch + Track Caon]
 ```
 ---
 
