@@ -63,7 +63,14 @@ The intelligence core of the Meme Syndicate Protocol consists of:
 - **Local Scout System**: Human-in-the-loop reconnaissance for regional phenomena  
 - **Coinability Index (CI) Engine**: Proprietary scoring system for meme potential  
 - **Knowledge Graph**: Interconnected database of memes, patterns, and cultural context  
-
+```mermaid
+graph TD
+    INTEL[🧩 Intelligence Module]
+    INTEL --> SCRAPER[🔍 Content Scraping Network]
+    INTEL --> SCOUT[🧭 Local Scout System]
+    INTEL --> CI[🧠 Coinability Index Engine]
+    INTEL --> GRAPH[🕸️ Knowledge Graph]
+```
 ---
 
 ### 2. 📚 Narrative Intelligence Layer
