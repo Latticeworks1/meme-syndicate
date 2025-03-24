@@ -1,8 +1,7 @@
 # 🧠 Meme Syndicate Protocol
 
-## 🪙 Overview
-
-The **Meme Syndicate Protocol** is an advanced intelligence and deployment system for identifying, analyzing, and monetizing high-potential memes through cryptocurrency creation. By integrating narrative intelligence, community analysis, and temporal pattern recognition, the system identifies memetic potential **before conventional metrics detect it**.
+## 🚀 Overview
+The Memecoin Treasury Multi-Agent System provides a comprehensive framework for analyzing, investing in, and creating memecoins through autonomous agents that collaborate via a shared vector database. The system implements a ReAct (Reasoning and Acting) pattern to enable reflective decision-making and autonomous web browsing capabilities.
 ```mermaid
 flowchart TD
     %% ==== INIT ====
