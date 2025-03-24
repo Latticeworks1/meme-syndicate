@@ -3,6 +3,7 @@
 ## 🪙 Overview
 
 The **Meme Syndicate Protocol** is an advanced intelligence and deployment system for identifying, analyzing, and monetizing high-potential memes through cryptocurrency creation. By integrating narrative intelligence, community analysis, and temporal pattern recognition, the system identifies memetic potential **before conventional metrics detect it**.
+
 ```mermaid
 graph TB
     %% STYLING (bold, muted contrast, serious tone)
@@ -86,7 +87,7 @@ graph TB
     TD_3 -.-> ID_5
     SU_3 -.-> ID_3
     FD_3 -.-> SU_1
-```mermaid
+```
 ---
 
 ## ⚙️ Core Capabilities
