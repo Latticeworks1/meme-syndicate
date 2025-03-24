@@ -18,11 +18,6 @@ graph TD
         SentC[Sentiment Collection]
         TechC[Technical Collection]
         RefC[Reflection Collection]
-        
-        ChromaDB --- RC
-        ChromaDB --- SentC
-        ChromaDB --- TechC
-        ChromaDB --- RefC
     end
 
     subgraph "External Data Sources"
@@ -39,33 +34,21 @@ graph TD
         Strategy[Strategic Direction]
     end
 
-    % Agent connections to vector storage
-    RA <--> RC
-    SA <--> SentC
-    TA <--> TechC
-    PM <--> RC
-    PM <--> SentC
-    PM <--> TechC
-    SC <--> RefC
+    RA --- RC
+    SA --- SentC
+    TA --- TechC
+    PM --- RC & SentC & TechC
+    SC --- RefC
     
-    % External data connections
-    Market --> RA
-    Social --> SA
-    News --> RA
-    Chain --> TA
+    Market --- RA
+    Social --- SA
+    News --- RA
+    Chain --- TA
     
-    % Decision pathway
-    PM --> Invest
-    PM --> Risk
-    SC --> Mint
-    SC --> Strategy
+    PM --- Invest & Risk
+    SC --- Mint & Strategy
     
-    % Inter-agent communication
-    RA --> SA
-    RA --> TA
-    SA --> TA
-    TA --> PM
-    PM --> SC
+    RA --- SA --- TA --- PM --- SC
 ```
 ---
 
