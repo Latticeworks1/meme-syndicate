@@ -4,42 +4,51 @@
 
 The **Meme Syndicate Protocol** is an advanced intelligence and deployment system for identifying, analyzing, and monetizing high-potential memes through cryptocurrency creation. By integrating narrative intelligence, community analysis, and temporal pattern recognition, the system identifies memetic potential **before conventional metrics detect it**.
 ```mermaid
-graph TD
+flowchart TD
+    %% Executive Core
     CEO[👑 CEO]
-    CIO[🧠 CIO]
-    COO[🎯 COO]
-    CTO[💻 CTO]
-    CFO[💰 CFO]
-    SU[🕶️ Special Ops]
+    CIO[🧠 CIO] --> ID[📡 Intelligence Division]
+    COO[🎯 COO] --> OD[🚀 Ops Division]
+    CTO[💻 CTO] --> TD[🧠 Tech Division]
+    CFO[💰 CFO] --> FD[🏦 Finance Division]
+    CEO --> SU[🕶️ Special Ops]
 
-    %% Executive hierarchy
-    CEO --> CIO
-    CEO --> COO
-    CEO --> CTO
-    CEO --> CFO
-    CEO --> SU
-
-    %% Divisions
-    CIO --> ID[📡 Intelligence Div]
-    COO --> OD[🚀 Ops Div]
-    CTO --> TD[💻 Tech Div]
-    CFO --> FD[🏦 Finance Div]
-
-    %% Compact Units
-    ID --> ID1[Meme Detect]
+    %% Intelligence Flow
+    ID --> ID1[Meme Detect Engine]
     ID --> ID2[Narrative Engine]
+    ID --> ID3[CI Score Model]
 
+    %% Flow to Community Analysis
+    ID --> COMM[👥 Community Layer]
+    COMM --> FRAME[Framing Analysis]
+    COMM --> SENTI[Sentiment Evolution]
+
+    %% Temporal Feed
+    ID --> TEMP[⏳ Temporal Layer]
+    TEMP --> DORMANT[Dormancy Prediction]
+    TEMP --> LIFECYCLE[Lifecycle Tracker]
+
+    %% Flow to PR Ops
+    ID3 --> OD
+    COMM --> OD
+    TEMP --> OD
     OD --> OD1[PR Ops]
     OD --> OD2[Influencer Relay]
+    OD --> OD3[Campaign Planner]
 
-    TD --> TD1[Alg Dev]
-    TD --> TD2[Infra]
-
+    %% PR Feeds Tokenization
+    OD --> FD
     FD --> FD1[Token Launch]
-    FD --> FD2[Risk Engine]
+    FD --> FD2[Liquidity Engine]
+    FD --> FD3[Risk Monitor]
 
-    SU --> SU1[🌀 Trend Lab]
-    SU --> SU2[⚖️ Ethics Council]
+    %% Special Ops Cross-Division Support
+    SU --> ID3
+    SU --> TEMP
+    SU --> FD3
+
+    %% Execution End
+    FD3 --> RESULT[🚀 Launch Memecoin + Track Performance]
 ```
 ---
 
