@@ -4,9 +4,7 @@
 
 The **Meme Syndicate Protocol** is an advanced intelligence and deployment system for identifying, analyzing, and monetizing high-potential memes through cryptocurrency creation. By integrating narrative intelligence, community analysis, and temporal pattern recognition, the system identifies memetic potential **before conventional metrics detect it**.
 
-```mermaid
-### 🗺️ Meme Syndicate Org Structure
-
+<pre lang="markdown">
 ```mermaid
 graph TD
     CEO[👑 CEO]
@@ -29,7 +27,7 @@ graph TD
     CTO --> TD[💻 Tech Div]
     CFO --> FD[🏦 Finance Div]
 
-    %% Compact Units (1-2 per division)
+    %% Compact Units
     ID --> ID1[Meme Detect]
     ID --> ID2[Narrative Engine]
 
@@ -45,6 +43,8 @@ graph TD
     SU --> SU1[🌀 Trend Lab]
     SU --> SU2[⚖️ Ethics Council]
 ```
+</pre>
+
 ---
 
 ## ⚙️ Core Capabilities
