@@ -12,13 +12,6 @@
 
 The emergence of memecoins as a significant subset of cryptocurrency markets necessitates sophisticated analytical frameworks capable of identifying, evaluating, and monetizing cultural phenomena at scale. This paper presents the Meme Syndicate Protocol (MSP), a novel multi-agent system architecture designed specifically for memetic asset analysis and deployment. The system leverages ChromaDB as a central vector repository enabling cross-agent knowledge transfer while implementing a ReAct (Reasoning and Acting) operational paradigm that facilitates reflective decision-making processes. Empirical validation using historical market data demonstrates that the MSP architecture achieves superior performance metrics compared to conventional approaches, suggesting significant potential for practical applications in memecoin treasury management.
 
-The **Meme Syndicate Protocol (MSP)** integrates:
-
-- 🔁 ReAct loops (Reasoning + Acting)
-- 🧬 ChromaDB vector memory
-- 🧠 Specialized agents (research, sentiment, narrative)
-- 🤖 Autonomous token deployment + tracking
-
 ---
 
 ## 📌 Motivation
@@ -26,13 +19,7 @@ The **Meme Syndicate Protocol (MSP)** integrates:
 Cryptocurrency markets have witnessed the exponential growth of memecoins—assets derived from internet culture and social phenomena rather than conventional utility frameworks (Thompson et al., 2021). This emergent asset class presents unique analytical challenges due to its reliance on cultural narratives, social sentiment dynamics, and non-traditional value drivers that elude conventional market analysis methodologies. The volatile nature of memecoin markets, combined with their sensitivity to narrative structures and community engagement patterns, creates both substantial risks and opportunities for systematic approaches to asset management in this domain.
 Recent advancements in autonomous agent architectures and vector database systems have created new opportunities for computational approaches to cryptocurrency portfolio management (Alamri et al., 2023). The Meme Syndicate Protocol presented in this paper addresses these challenges through a novel multi-agent system designed specifically for memecoin analysis, investment decision-making, and token creation utilizing ChromaDB as a central vector repository for inter-agent knowledge sharing.
 
-The system architecture builds upon established agent communication frameworks (Li et al., 2022) while incorporating novel vector-based knowledge persistence mechanisms. Each specialized agent contributes domain-specific intelligence to the collective knowledge base:
 
-Research Agent (RA): Retrieves and processes fundamental market data, news events, and on-chain metrics relevant to memecoin performance. The agent implements autonomous web browsing capabilities to extract information from diverse sources and transform unstructured data into structured knowledge representations.
-Sentiment Analysis Agent (SA): Quantifies social media signals across platforms, tracking community growth, engagement metrics, and sentiment valence patterns. This agent employs specialized NLP techniques optimized for the unique linguistic characteristics of crypto-focused social communities (Zhang and Peterson, 2023).
-Technical Analysis Agent (TA): Processes price patterns and technical indicators using both traditional and crypto-specific methodologies, generating pattern recognition outputs and predictive signals with associated confidence metrics.
-
-This multi-modal approach to market analysis reflects findings by Zhang and Peterson (2023) that demonstrated a 42% improvement in prediction accuracy through diverse information integration compared to single-modality approaches. The Portfolio Manager (PM) and Strategy Coordinator (SC) agents function as decision-making entities, consuming the processed intelligence to formulate investment decisions and strategic direction. This hierarchical structure aligns with research by Thompson et al. (2021) showing enhanced decision quality through specialized agent roles with clear authority delineation.
 ---
 
 ## 🏗️ System Architecture
@@ -85,6 +72,14 @@ graph TD
 
     RA --- SA --- TA --- PM --- SC
 ```
+
+The system architecture builds upon established agent communication frameworks (Li et al., 2022) while incorporating novel vector-based knowledge persistence mechanisms. Each specialized agent contributes domain-specific intelligence to the collective knowledge base:
+
+Research Agent (RA): Retrieves and processes fundamental market data, news events, and on-chain metrics relevant to memecoin performance. The agent implements autonomous web browsing capabilities to extract information from diverse sources and transform unstructured data into structured knowledge representations.
+Sentiment Analysis Agent (SA): Quantifies social media signals across platforms, tracking community growth, engagement metrics, and sentiment valence patterns. This agent employs specialized NLP techniques optimized for the unique linguistic characteristics of crypto-focused social communities (Zhang and Peterson, 2023).
+Technical Analysis Agent (TA): Processes price patterns and technical indicators using both traditional and crypto-specific methodologies, generating pattern recognition outputs and predictive signals with associated confidence metrics.
+
+This multi-modal approach to market analysis reflects findings by Zhang and Peterson (2023) that demonstrated a 42% improvement in prediction accuracy through diverse information integration compared to single-modality approaches. The Portfolio Manager (PM) and Strategy Coordinator (SC) agents function as decision-making entities, consuming the processed intelligence to formulate investment decisions and strategic direction. This hierarchical structure aligns with research by Thompson et al. (2021) showing enhanced decision quality through specialized agent roles with clear authority delineation.
 
 ---
 
