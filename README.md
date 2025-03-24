@@ -66,7 +66,7 @@ The intelligence core of the Meme Syndicate Protocol consists of:
 ```mermaid
 graph TD
     INTEL[🧩 Intelligence Module]
-    INTEL --> SCRAPER[🔍 Content Scraping Network]
+    INTEL --> SCRAPER[🔍 Content Scraping]
     INTEL --> SCOUT[🧭 Local Scout System]
     INTEL --> CI[🧠 Coinability Index Engine]
     INTEL --> GRAPH[🕸️ Knowledge Graph]
@@ -81,7 +81,14 @@ The revolutionary Narrative Intelligence system identifies story patterns and ch
 - **Recurring Theme Analyzer**: Maps how themes gain significance through repetition  
 - **Character Development Tracker**: Monitors the evolution of meme subjects  
 - **Narrative Vector Mapping**: Projects the trajectory of evolving narratives  
-
+```mermaid
+graph TD
+    NARRATIVE[📚 Narrative Intelligence Layer]
+    NARRATIVE --> ARC[🧾 Story Arc Detection]
+    NARRATIVE --> THEME[🔁 Recurring Theme Analyzer]
+    NARRATIVE --> CHAR[🎭 Character Development Tracker]
+    NARRATIVE --> VECTOR[🧭 Narrative Vector Mapping]
+```
 ---
 
 ### 3. 👥 Community Interpretation Framework
@@ -92,7 +99,14 @@ Understanding how communities create meaning around content:
 - **Collective Memory Mapper**: Maps connections between current and past events  
 - **Reference Detector**: Identifies cultural touchpoints being activated  
 - **Sentiment Evolution Tracker**: Follows emotional responses over time  
-
+```mermaid
+graph TD
+    COMMUNITY[👥 Community Interpretation Framework]
+    COMMUNITY --> FRAME[🖼️ Framing Analysis]
+    COMMUNITY --> MEMORY[🧠 Collective Memory Mapper]
+    COMMUNITY --> REF[📌 Reference Detector]
+    COMMUNITY --> SENTI[📉 Sentiment Evolution Tracker]
+```
 ---
 
 ### 4. ⏳ Temporal Intelligence System
@@ -103,7 +117,14 @@ Analyzing content across multiple time horizons:
 - **Narrative Momentum Calculator**: Scores story development independent of metrics  
 - **Dormancy Potential Predictor**: Identifies patterns suggesting future virality  
 - **Lifecycle Predictor**: Projects the complete evolution trajectory of memes  
-
+```mermaid
+graph TD
+    TEMPORAL[⏳ Temporal Intelligence System]
+    TEMPORAL --> MULTI[⏲️ Multi-timescale Monitoring]
+    TEMPORAL --> MOMENTUM[📈 Narrative Momentum Calculator]
+    TEMPORAL --> DORMANT[🧊 Dormancy Predictor]
+    TEMPORAL --> LIFECYCLE[🔁 Lifecycle Projector]
+```
 ---
 
 ### 5. 📣 PR Operations Command
@@ -114,7 +135,14 @@ Strategic deployment of identified high-potential memes:
 - **Influencer Network**: Coordinates with key opinion leaders  
 - **Seeding Scheduler**: Optimizes timing across platforms  
 - **Performance Analytics**: Tracks campaign effectiveness  
-
+```mermaid
+graph TD
+    PR[📣 PR Operations Command]
+    PR --> CAMPAIGN[🗓️ Campaign Planner]
+    PR --> INFLUENCERS[🤝 Influencer Network]
+    PR --> SEED[🌱 Seeding Scheduler]
+    PR --> ANALYTICS[📊 Performance Analytics]
+```
 ---
 
 ### 6. 🚀 Token Launch System
@@ -125,7 +153,14 @@ Converting meme potential into market value:
 - **Launch Timing Optimizer**: Determines optimal market conditions  
 - **Liquidity Provider**: Ensures trading capabilities  
 - **Performance Tracker**: Monitors token market performance  
-
+```mermaid
+graph TD
+    TOKEN[🚀 Token Launch System]
+    TOKEN --> GEN[🪙 Memecoin Generator]
+    TOKEN --> TIMING[📅 Launch Timing Optimizer]
+    TOKEN --> LIQ[💧 Liquidity Provider]
+    TOKEN --> TRACKER[📈 Performance Tracker]
+```
 ---
 
 > 💬 _"Memes move faster than markets. This protocol turns culture into capital before the crowd catches on."_  
