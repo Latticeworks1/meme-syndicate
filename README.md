@@ -3,53 +3,32 @@
 ## 🚀 Overview
 The Memecoin Treasury Multi-Agent System provides a comprehensive framework for analyzing, investing in, and creating memecoins through autonomous agents that collaborate via a shared vector database. The system implements a ReAct (Reasoning and Acting) pattern to enable reflective decision-making and autonomous web browsing capabilities.
 ```mermaid
-flowchart TD
-    %% ==== INIT ====
-    START[🚀 Initialization] --> STATE[🧠 Shared State (LangGraph)]
-
-    %% ==== REACT CYCLE ====
-    subgraph ReAct Loop
-        OBSERVE[👀 Observation Phase]
-        THINK[💭 Thought Formulation]
-        ACT[⚙️ Action Execution]
-        REFLECT[🔁 Reflection & Feedback]
-        OBSERVE --> THINK --> ACT --> REFLECT --> OBSERVE
+graph TD
+    subgraph "Vector Storage"
+        ChromaDB[ChromaDB Vector Store]
+        RC[Research Collection]
+        SC[Sentiment Collection]
+        TC[Technical Collection]
+        ReflC[Reflection Collection]
+        ChromaDB --> RC
+        ChromaDB --> SC
+        ChromaDB --> TC
+        ChromaDB --> ReflC
     end
 
-    %% ==== AGENT ARCHITECTURE ====
-    STATE --> RESEARCH[📡 Research Agent]
-    STATE --> SENTIMENT[📈 Sentiment Agent]
-    STATE --> TECHNICAL[📊 Technical Analysis Agent]
-    STATE --> PORTFOLIO[📁 Portfolio Manager]
-    STATE --> COORDINATOR[🧭 Strategy Coordinator]
+    subgraph "Agent Ecosystem"
+        RA[Research Agent]
+        SA[Sentiment Analysis Agent]
+        TA[Technical Analysis Agent]
+        PM[Portfolio Manager Agent]
+        SCA[Strategy Coordinator Agent]
+    end
 
-    %% Chroma DB Collections
-    CHROMA[🧬 Chroma DB]
-    CHROMA --> RC[📚 research_collection]
-    CHROMA --> SC[💬 sentiment_collection]
-    CHROMA --> TC[📉 technical_collection]
-    CHROMA --> REFLECTCOL[🧠 reflection_collection]
-
-    %% AGENTS <--> Chroma DB
-    RESEARCH <--> CHROMA
-    SENTIMENT <--> CHROMA
-    TECHNICAL <--> CHROMA
-    REFLECT <--> CHROMA
-    PORTFOLIO <--> CHROMA
-
-    %% ReAct Loop feeds into Agents
-    OBSERVE --> RESEARCH
-    OBSERVE --> SENTIMENT
-    OBSERVE --> TECHNICAL
-    REFLECT --> COORDINATOR
-
-    %% COORDINATOR Synthesizes Strategy
-    COORDINATOR --> PORTFOLIO
-    PORTFOLIO --> EXECUTE[💥 Trade Execution]
-
-    %% Post-trade Loop
-    EXECUTE --> FEEDBACK[📊 Performance Logging]
-    FEEDBACK --> CHROMA
+    RA <--> ChromaDB
+    SA <--> ChromaDB
+    TA <--> ChromaDB
+    PM <--> ChromaDB
+    SCA <--> ChromaDB
 ```
 ---
 
