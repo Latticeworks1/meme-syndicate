@@ -5,50 +5,52 @@
 The **Meme Syndicate Protocol** is an advanced intelligence and deployment system for identifying, analyzing, and monetizing high-potential memes through cryptocurrency creation. By integrating narrative intelligence, community analysis, and temporal pattern recognition, the system identifies memetic potential **before conventional metrics detect it**.
 ```mermaid
 flowchart TD
-    %% Executive Core
-    CEO[👑 CEO]
-    CIO[🧠 CIO] --> ID[📡 Intelligence Division]
-    COO[🎯 COO] --> OD[🚀 Ops Division]
-    CTO[💻 CTO] --> TD[🧠 Tech Division]
-    CFO[💰 CFO] --> FD[🏦 Finance Division]
-    CEO --> SU[🕶️ Special Ops]
+    %% ==== INIT ====
+    START[🚀 Initialization] --> STATE[🧠 Shared State (LangGraph)]
 
-    %% Intelligence Flow
-    ID --> ID1[Meme Detect Engine]
-    ID --> ID2[Narrative Engine]
-    ID --> ID3[CI Score Model]
+    %% ==== REACT CYCLE ====
+    subgraph ReAct Loop
+        OBSERVE[👀 Observation Phase]
+        THINK[💭 Thought Formulation]
+        ACT[⚙️ Action Execution]
+        REFLECT[🔁 Reflection & Feedback]
+        OBSERVE --> THINK --> ACT --> REFLECT --> OBSERVE
+    end
 
-    %% Flow to Community Analysis
-    ID --> COMM[👥 Community Layer]
-    COMM --> FRAME[Framing Analysis]
-    COMM --> SENTI[Sentiment Evolution]
+    %% ==== AGENT ARCHITECTURE ====
+    STATE --> RESEARCH[📡 Research Agent]
+    STATE --> SENTIMENT[📈 Sentiment Agent]
+    STATE --> TECHNICAL[📊 Technical Analysis Agent]
+    STATE --> PORTFOLIO[📁 Portfolio Manager]
+    STATE --> COORDINATOR[🧭 Strategy Coordinator]
 
-    %% Temporal Feed
-    ID --> TEMP[⏳ Temporal Layer]
-    TEMP --> DORMANT[Dormancy Prediction]
-    TEMP --> LIFECYCLE[Lifecycle Tracker]
+    %% Chroma DB Collections
+    CHROMA[🧬 Chroma DB]
+    CHROMA --> RC[📚 research_collection]
+    CHROMA --> SC[💬 sentiment_collection]
+    CHROMA --> TC[📉 technical_collection]
+    CHROMA --> REFLECTCOL[🧠 reflection_collection]
 
-    %% Flow to PR Ops
-    ID3 --> OD
-    COMM --> OD
-    TEMP --> OD
-    OD --> OD1[PR Ops]
-    OD --> OD2[Influencer Relay]
-    OD --> OD3[Campaign Planner]
+    %% AGENTS <--> Chroma DB
+    RESEARCH <--> CHROMA
+    SENTIMENT <--> CHROMA
+    TECHNICAL <--> CHROMA
+    REFLECT <--> CHROMA
+    PORTFOLIO <--> CHROMA
 
-    %% PR Feeds Tokenization
-    OD --> FD
-    FD --> FD1[Token Launch]
-    FD --> FD2[Liquidity Engine]
-    FD --> FD3[Risk Monitor]
+    %% ReAct Loop feeds into Agents
+    OBSERVE --> RESEARCH
+    OBSERVE --> SENTIMENT
+    OBSERVE --> TECHNICAL
+    REFLECT --> COORDINATOR
 
-    %% Special Ops Cross-Division Support
-    SU --> ID3
-    SU --> TEMP
-    SU --> FD3
+    %% COORDINATOR Synthesizes Strategy
+    COORDINATOR --> PORTFOLIO
+    PORTFOLIO --> EXECUTE[💥 Trade Execution]
 
-    %% Execution End
-    FD3 --> RESULT[Launch + Track Caon]
+    %% Post-trade Loop
+    EXECUTE --> FEEDBACK[📊 Performance Logging]
+    FEEDBACK --> CHROMA
 ```
 ---
 
