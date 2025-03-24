@@ -3,6 +3,7 @@
 ## 🚀 Overview
 The Memecoin Treasury Multi-Agent System provides a comprehensive framework for analyzing, investing in, and creating memecoins through autonomous agents that collaborate via a shared vector database. The system implements a ReAct (Reasoning and Acting) pattern to enable reflective decision-making and autonomous web browsing capabilities.
 ---
+
 🏗️ Architecture
 The system consists of specialized agents that share information through ChromaDB collections:
 ```mermaid
