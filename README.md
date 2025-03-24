@@ -2,10 +2,76 @@
 
 ## 🚀 Overview
 The Memecoin Treasury Multi-Agent System provides a comprehensive framework for analyzing, investing in, and creating memecoins through autonomous agents that collaborate via a shared vector database. The system implements a ReAct (Reasoning and Acting) pattern to enable reflective decision-making and autonomous web browsing capabilities.
+```mermaid
+graph TD
+    subgraph "Agent Ecosystem"
+        RA[Research Agent]
+        SA[Sentiment Analysis Agent]
+        TA[Technical Analysis Agent]
+        PM[Portfolio Manager Agent]
+        SC[Strategy Coordinator Agent]
+    end
+
+    subgraph "Vector Storage Layer"
+        ChromaDB[ChromaDB Central Repository]
+        RC[Research Collection]
+        SentC[Sentiment Collection]
+        TechC[Technical Collection]
+        RefC[Reflection Collection]
+        
+        ChromaDB --- RC
+        ChromaDB --- SentC
+        ChromaDB --- TechC
+        ChromaDB --- RefC
+    end
+
+    subgraph "External Data Sources"
+        Market[Market Data APIs]
+        Social[Social Media Platforms]
+        News[Financial News]
+        Chain[Blockchain Analytics]
+    end
+
+    subgraph "Decision Outputs"
+        Invest[Investment Decisions]
+        Mint[Minting Opportunities]
+        Risk[Risk Management]
+        Strategy[Strategic Direction]
+    end
+
+    % Agent connections to vector storage
+    RA <--> RC
+    SA <--> SentC
+    TA <--> TechC
+    PM <--> RC
+    PM <--> SentC
+    PM <--> TechC
+    SC <--> RefC
+    
+    % External data connections
+    Market --> RA
+    Social --> SA
+    News --> RA
+    Chain --> TA
+    
+    % Decision pathway
+    PM --> Invest
+    PM --> Risk
+    SC --> Mint
+    SC --> Strategy
+    
+    % Inter-agent communication
+    RA --> SA
+    RA --> TA
+    SA --> TA
+    TA --> PM
+    PM --> SC
+```
 ---
 
 🏗️ Architecture
 The system consists of specialized agents that share information through ChromaDB collections:
+
 ```mermaid
 graph TD
     subgraph "Vector Storage"
